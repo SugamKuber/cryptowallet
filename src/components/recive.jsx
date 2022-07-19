@@ -17,12 +17,12 @@ function Recive() {
                         <ol class="items-center sm:flex">
                             <li class="relative mb-6 sm:mb-0">
                                 <div class="flex items-center">
-                                    <div class="flex z-10 justify-center items-center w-6 h-6 bg-blue-200 rounded-full ring-0 ring-white dark:bg-blue-900 sm:ring-8 dark:ring-gray-900 shrink-0">
+                                    <div class="flex z-10 justify-center items-center w-6 h-6 bg-blue-200 rounded-full ring-0 ring-white  shrink-0">
                                         1</div>
-                                    <div class="hidden sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700"></div>
+                                    <div class="hidden  w-full bg-gray-200 h-0.5 "></div>
                                 </div>
                                 <div class="mt-3 sm:pr-8">
-                                    <h3 class="text-lg font-semibold text-gray-200 dark:text-white">Device</h3>
+                                    <h3 class="text-lg font-semibold text-gray-800 ">Device</h3>
                                     <div>
                                         <p>Follow Instructions on Device</p>
                                         <HStack className="bg-white m-4 p-4 rounded-2xl"><spam class="float-left"><ArrowForwardIcon color='yellow.500' /></spam><spam >Select the Wallet On Device</spam><spam class="float-right"><CheckIcon /></spam></HStack>
@@ -35,10 +35,10 @@ function Recive() {
                                 <div class="flex items-center">
                                     <div class="flex z-10 justify-center items-center w-6 h-6 bg-blue-200 rounded-full ring-0 ring-white dark:bg-blue-900 sm:ring-8 dark:ring-gray-900 shrink-0">
                                         2</div>
-                                    <div class="hidden sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700"></div>
+                                    <div class="hidden sm:flex w-full bg-gray-200 h-0.5 "></div>
                                 </div>
                                 <div class="mt-3 sm:pr-8">
-                                    <h3 class="text-lg font-semibold text-gray-200 dark:text-white">Verification</h3>
+                                    <h3 class="text-lg font-semibold text-gray-800 ">Verification</h3>
                                     <div>
                                         <VStack>
                                             <div class="bg-slate-400 m-5 p-16 border-dashed border-2 border-yellow-500 ">
@@ -57,7 +57,7 @@ function Recive() {
                                     <div class="hidden sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700"></div>
                                 </div>
                                 <div class="mt-3 sm:pr-8">
-                                    <h3 class="text-lg font-semibold text-gray-200 dark:text-white">Recive</h3>
+                                    <h3 class="text-lg font-semibold text-gray-800 dark:text-white">Recive</h3>
                                     <div>
                                         <VStack>
                                             <div class="bg-slate-400 m-5 p-8 border-dashed border-2 border-yellow-500 ">

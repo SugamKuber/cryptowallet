@@ -1,7 +1,6 @@
 import React from "react";
-import { Switch } from "@chakra-ui/react";
+import { HStack } from "@chakra-ui/react";
 import { Recive } from "./recive";
-import { CheckCircleIcon } from "@chakra-ui/icons";
 
 const navigation = [
     {
@@ -52,19 +51,28 @@ class Main extends React.Component {
     render() {
         return (
             <>
-                <div>
+                <div className="bg-zinc-800">
                     <div className="relative h-10 w-10/12">
                         <div class="absolute top-0 right-0 h-6 grid grid-cols-3 divide-x">
-                            <div>
-                                <CheckCircleIcon w={15} h={15} /> sync
-                            </div>
-                            <Switch />
+                            <HStack class="text-slate-50 grid grid-cols-3 divide-x">
+                                {/* add it laterr */}
+                                <div>hiiii</div>
+                            </HStack>
+                        </div>
+
+                    </div>
+                    <div className="relative h-10 w-10/12">
+                        <div class="absolute top-0 right-0 h-6 grid grid-cols-3 divide-x">
+                            <HStack class="text-slate-50 grid grid-cols-3 divide-x">
+                                {/* add it laterr */}
+                                <div>hiiii</div>
+                            </HStack>
                         </div>
                     </div>
-                    <div className="p-6 bg-blue-600">
-                        <div class="overflow-x-auto relative shadow-md sm:rounded-lg">
-                            <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
-                                <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+                    <div className="p-8">
+                        <div class="overflow-x-auto relative shadow-md ">
+                            <table class="w-full text-sm text-left text-gray-100">
+                                <thead class="text-xs text-gray-500 uppercase bg-zinc-800 ">
                                     <tr>
                                         <th scope="col" class="py-3 px-6">
                                             Product name
@@ -88,18 +96,13 @@ class Main extends React.Component {
                                     </tr>
                                 </thead>
 
-                                <tbody>
+                                <tbody >
                                     {navigation.map((item) => (
-                                        <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
-                                            <th
-                                                scope="row"
-                                                class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white"
-                                            >
+                                        <tr class="bg-slate-700">
+                                            <th scope="row" class="py-4 px-6 font-medium text-gray-200 whitespace-nowrap">
                                                 <div class="align-baseline w-5">
-                                                    <img src={item.img} alt="img" class="rounded-full "/>{item.name}
-                                        
+                                                    <img src={item.img} alt="img" class="rounded-full" />{item.name}
                                                 </div>
-                                                
                                             </th>
                                             <td class="py-4 px-6">{item.color}</td>
                                             <td class="py-4 px-6">{item.laptop}</td>
@@ -109,7 +112,7 @@ class Main extends React.Component {
                                                     href="!#"
                                                     class="font-medium"
                                                 >
-                                                    <Recive/>
+                                                    <Recive />
                                                 </a>
                                             </td>
                                             <td class="py-4 px-6 ">
